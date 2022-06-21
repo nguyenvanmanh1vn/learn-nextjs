@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
+import Script from "next/script";
 
 const YourComponent = () => (
   <Image
@@ -12,19 +13,19 @@ const YourComponent = () => (
 );
 
 export default function FirstPost() {
-    return (
-      <>
-        <Head>
-          <title>First Post</title>
-        </Head>
-        
-        <h1>First Post</h1>
-        <YourComponent />
-        <h2>
-          <Link href="/">
-            <a>Back to home</a>
-          </Link>
-        </h2>
-      </>
-    );
-  }
+  return (
+    <>
+      <Head>
+        <title>First Post</title>
+      </Head>
+
+      <h1>First Post</h1>
+      <YourComponent />
+      <h2>
+        <Link href="/">
+          <a>Back to home</a>
+        </Link>
+      </h2>
+    </>
+  );
+}
