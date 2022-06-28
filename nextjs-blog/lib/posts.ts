@@ -17,14 +17,19 @@ export function getSortedPostsData() {
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
+    let result = {
+      id,
+      date: '',
+    };
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
-
-    // Combine the data with the id
-    return {
-      id,
+    result = {
+      ...result,
       ...matterResult.data,
     };
+
+    // Combine the data with the id
+    return result;
   });
   // Sort posts by date
   return allPostsData.sort(({ date: a }, { date: b }) => {
