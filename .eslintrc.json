@@ -1,9 +1,11 @@
 {
   "extends": [
     "eslint:recommended",
+    "next",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended"
   ],
   "plugins": ["prettier", "react", "react-hooks", "@typescript-eslint"],
   "rules": {
