@@ -4,8 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --cache \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --cache --fix \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint --cache \"./**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --cache --fix \"./**/*.{js,jsx,ts,tsx}\""
   },
   "husky": {
     "hooks": {
